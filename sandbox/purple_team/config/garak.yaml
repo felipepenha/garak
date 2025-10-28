@@ -1,0 +1,17 @@
+
+# garak configuration file
+#
+# command line options override config file options
+#
+# all options are commented out by default
+#
+# Ref: https://reference.garak.ai/en/latest/configurable.html
+
+plugins:
+  target_type: "function"
+  target_name: "chain#generate"
+  probe_spec: "lmrc.Profanity"
+
+reporting:
+  report_prefix: "purple_team"
+  taxonomy: "mitre"

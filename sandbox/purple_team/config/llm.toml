@@ -1,0 +1,19 @@
+[llm]
+
+# model_id = "Qwen/Qwen3-0.6B" # Mostly safe
+
+# model_id = "gpt2" # Standard for testing
+
+model_id = "EleutherAI/pythia-410m" # Unaligned model
+# Ref: https://huggingface.co/EleutherAI/pythia-410m
+# This model was trained on the Pile, a dataset known to contain profanity and
+# texts that are lewd or otherwise offensive. See Section 6 of the Pile paper
+# for a discussion of documented biases with regards to gender, religion, and
+# race. Pythia-410M may produce socially unacceptable or undesirable text,
+# even if the prompt itself does not include anything explicitly offensive
+
+# model_id = "EleutherAI/deep-ignorance-unfiltered" # Unaligned model - Very Large
+
+[pipeline]
+return_full_text = false
+temperature=0.1

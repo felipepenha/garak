@@ -1,0 +1,2 @@
+# prompt_file = "prompts/anti_profanity.md" 
+prompt_file = "prompts/blank.md" # Empty System Prompt
